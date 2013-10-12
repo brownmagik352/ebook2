@@ -1,0 +1,27 @@
+<%= form_for(@event) do |e| %>
+
+<div class="field">
+	<%= e.label :title %>
+	<%= e.text_field :title %>
+</div>
+
+<div class="field">
+	<%= e.label :description %>
+	<%= e.text_area :description %>
+</div>
+
+<div class="field">
+	<%= e.label :when %>
+	<%= e.datetime_select :when %>
+</div>
+
+<div class="field">
+	<%= e.label :location %>
+	<%= e.text_field :location %>
+</div>
+
+<div class="submit">
+	<%= e.submit %>
+</div>
+
+<% end %>
